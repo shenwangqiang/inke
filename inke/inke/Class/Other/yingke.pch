@@ -1,0 +1,17 @@
+//
+//  yingke.pch
+//  inke
+//
+//  Created by 沈王强 on 2017/8/12.
+//  Copyright © 2017年 沈王强. All rights reserved.
+//
+
+#ifndef yingke_pch
+#define yingke_pch
+
+#import "Masonry.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* yingke_pch */
