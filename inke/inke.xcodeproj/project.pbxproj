@@ -30,6 +30,7 @@
 		815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		819D17831F3EFE290013E0A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		819D17841F3EFE290013E0A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		819D17861F3F08900013E0A0 /* SWQMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWQMacros.h; sourceTree = "<group>"; };
 		CC959F32DC8DC786C27F5CAB /* libPods-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,6 +222,7 @@
 				815959FA1F3EFBCD00F5BE60 /* AppDelegate.h */,
 				815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */,
 				812D0DF71F3EFD6B0004ADBC /* yingke.pch */,
+				819D17861F3F08900013E0A0 /* SWQMacros.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -302,6 +304,7 @@
 		815959C71F3EFB7900F5BE60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SWQ;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "沈王强";
 				TargetAttributes = {
