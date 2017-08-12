@@ -521,6 +521,7 @@
 			baseConfigurationReference = 0C2CB7088AAF590B71815087 /* Pods-inke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/inke/Class/Other/yingke.pch";
 				INFOPLIST_FILE = inke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +535,7 @@
 			baseConfigurationReference = 76F98FB36166BBB035646ECF /* Pods-inke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/inke/Class/Other/yingke.pch";
 				INFOPLIST_FILE = inke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
