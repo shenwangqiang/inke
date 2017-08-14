@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810495F61F414DFF001AC791 /* SWQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810495F51F414DFF001AC791 /* SWQTabBarController.m */; };
+		810495F91F414F9D001AC791 /* SWQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810495F81F414F9D001AC791 /* SWQBaseViewController.m */; };
+		810496001F414FE3001AC791 /* SWQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810495FE1F414FE3001AC791 /* SWQMainViewController.m */; };
+		810496011F414FE3001AC791 /* SWQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810495FF1F414FE3001AC791 /* SWQMainViewController.xib */; };
+		810496051F415042001AC791 /* SWQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810496031F415042001AC791 /* SWQMeViewController.m */; };
+		810496061F415042001AC791 /* SWQMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810496041F415042001AC791 /* SWQMeViewController.xib */; };
+		810496091F415181001AC791 /* SWQBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810496081F415181001AC791 /* SWQBaseNavigationController.m */; };
 		815959D41F3EFB7A00F5BE60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 815959D31F3EFB7A00F5BE60 /* main.m */; };
 		815959DD1F3EFB7A00F5BE60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815959DB1F3EFB7A00F5BE60 /* Main.storyboard */; };
 		815959DF1F3EFB7A00F5BE60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 815959DE1F3EFB7A00F5BE60 /* Assets.xcassets */; };
 		815959E21F3EFB7A00F5BE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815959E01F3EFB7A00F5BE60 /* LaunchScreen.storyboard */; };
 		81595A011F3EFBCD00F5BE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */; };
+		818D9A431F41391300AFD202 /* SWQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 818D9A421F41391300AFD202 /* SWQTabBar.m */; };
 		819D17851F3EFE290013E0A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819D17841F3EFE290013E0A0 /* ViewController.m */; };
 		9B5384E6D819B9A989E11828 /* libPods-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC959F32DC8DC786C27F5CAB /* libPods-inke.a */; };
 /* End PBXBuildFile section */
@@ -19,6 +27,18 @@
 /* Begin PBXFileReference section */
 		0C2CB7088AAF590B71815087 /* Pods-inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inke/Pods-inke.debug.xcconfig"; sourceTree = "<group>"; };
 		76F98FB36166BBB035646ECF /* Pods-inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-inke/Pods-inke.release.xcconfig"; sourceTree = "<group>"; };
+		810495F41F414DFF001AC791 /* SWQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQTabBarController.h; sourceTree = "<group>"; };
+		810495F51F414DFF001AC791 /* SWQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQTabBarController.m; sourceTree = "<group>"; };
+		810495F71F414F9D001AC791 /* SWQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQBaseViewController.h; sourceTree = "<group>"; };
+		810495F81F414F9D001AC791 /* SWQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQBaseViewController.m; sourceTree = "<group>"; };
+		810495FD1F414FE3001AC791 /* SWQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQMainViewController.h; sourceTree = "<group>"; };
+		810495FE1F414FE3001AC791 /* SWQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQMainViewController.m; sourceTree = "<group>"; };
+		810495FF1F414FE3001AC791 /* SWQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQMainViewController.xib; sourceTree = "<group>"; };
+		810496021F415042001AC791 /* SWQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQMeViewController.h; sourceTree = "<group>"; };
+		810496031F415042001AC791 /* SWQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQMeViewController.m; sourceTree = "<group>"; };
+		810496041F415042001AC791 /* SWQMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQMeViewController.xib; sourceTree = "<group>"; };
+		810496071F415181001AC791 /* SWQBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQBaseNavigationController.h; sourceTree = "<group>"; };
+		810496081F415181001AC791 /* SWQBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQBaseNavigationController.m; sourceTree = "<group>"; };
 		812D0DF71F3EFD6B0004ADBC /* yingke.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yingke.pch; sourceTree = "<group>"; };
 		815959CF1F3EFB7A00F5BE60 /* inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		815959D31F3EFB7A00F5BE60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -28,6 +48,8 @@
 		815959E31F3EFB7A00F5BE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		815959FA1F3EFBCD00F5BE60 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		818D9A411F41391300AFD202 /* SWQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQTabBar.h; sourceTree = "<group>"; };
+		818D9A421F41391300AFD202 /* SWQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQTabBar.m; sourceTree = "<group>"; };
 		819D17831F3EFE290013E0A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		819D17841F3EFE290013E0A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		819D17861F3F08900013E0A0 /* SWQMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWQMacros.h; sourceTree = "<group>"; };
@@ -88,6 +110,7 @@
 		815959E91F3EFBCD00F5BE60 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				818D9A3D1F41386000AFD202 /* Base */,
 				815959EA1F3EFBCD00F5BE60 /* Helper */,
 				815959EB1F3EFBCD00F5BE60 /* Launch */,
 				815959EF1F3EFBCD00F5BE60 /* Lib */,
@@ -247,6 +270,12 @@
 		815959FF1F3EFBCD00F5BE60 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				810495FD1F414FE3001AC791 /* SWQMainViewController.h */,
+				810496021F415042001AC791 /* SWQMeViewController.h */,
+				810496031F415042001AC791 /* SWQMeViewController.m */,
+				810496041F415042001AC791 /* SWQMeViewController.xib */,
+				810495FE1F414FE3001AC791 /* SWQMainViewController.m */,
+				810495FF1F414FE3001AC791 /* SWQMainViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,6 +285,21 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		818D9A3D1F41386000AFD202 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				818D9A411F41391300AFD202 /* SWQTabBar.h */,
+				818D9A421F41391300AFD202 /* SWQTabBar.m */,
+				810495F71F414F9D001AC791 /* SWQBaseViewController.h */,
+				810495F81F414F9D001AC791 /* SWQBaseViewController.m */,
+				810495F41F414DFF001AC791 /* SWQTabBarController.h */,
+				810496071F415181001AC791 /* SWQBaseNavigationController.h */,
+				810496081F415181001AC791 /* SWQBaseNavigationController.m */,
+				810495F51F414DFF001AC791 /* SWQTabBarController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		8F7828A968F5724BB03C7295 /* Pods */ = {
@@ -338,6 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				815959E21F3EFB7A00F5BE60 /* LaunchScreen.storyboard in Resources */,
+				810496061F415042001AC791 /* SWQMeViewController.xib in Resources */,
+				810496011F414FE3001AC791 /* SWQMainViewController.xib in Resources */,
 				815959DF1F3EFB7A00F5BE60 /* Assets.xcassets in Resources */,
 				815959DD1F3EFB7A00F5BE60 /* Main.storyboard in Resources */,
 			);
@@ -403,7 +449,13 @@
 			files = (
 				819D17851F3EFE290013E0A0 /* ViewController.m in Sources */,
 				81595A011F3EFBCD00F5BE60 /* AppDelegate.m in Sources */,
+				810496001F414FE3001AC791 /* SWQMainViewController.m in Sources */,
+				818D9A431F41391300AFD202 /* SWQTabBar.m in Sources */,
+				810496051F415042001AC791 /* SWQMeViewController.m in Sources */,
 				815959D41F3EFB7A00F5BE60 /* main.m in Sources */,
+				810495F61F414DFF001AC791 /* SWQTabBarController.m in Sources */,
+				810496091F415181001AC791 /* SWQBaseNavigationController.m in Sources */,
+				810495F91F414F9D001AC791 /* SWQBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
