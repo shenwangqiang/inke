@@ -7,16 +7,52 @@
 //
 
 #import "SWQHotViewController.h"
+#import "SWQLiveHandler.h"
 
 @interface SWQHotViewController ()
+
+@property (nonatomic ,strong) NSMutableArray * datalist;
 
 @end
 
 @implementation SWQHotViewController
 
+- (NSMutableArray *) datalist{
+    if(!_datalist){
+        _datalist = [NSMutableArray alloc];
+    }
+    return _datalist;
+}
+
+-  (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.datalist.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    [self initUI];
+    
+    [self loadData];
+}
+
+-(void) initUI{
+    
+}
+
+-(void) loadData{
+    [SWQLiveHandler executeGetHotLiveTaskWithPage:0 success:^(id obj) {
+        [self.datalist addObjectsFromArray:obj];
+        [self.tableView reloadData];
+    } failed:^(id obj) {
+        NSLog(@"%@",obj);
+    }];
+
 }
 
 - (void)didReceiveMemoryWarning {

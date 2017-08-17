@@ -8,6 +8,6 @@
 
 #import "SWQBaseViewController.h"
 
-@interface SWQHotViewController : SWQBaseViewController
+@interface SWQHotViewController : UITableViewController
 
 @end

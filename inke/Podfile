@@ -14,4 +14,6 @@ pod 'SDWebImage', '~> 4.1.0'
 pod 'Masonry', '~> 1.0.2'
 #YYKit 是一组庞大、功能丰富的 iOS 组件，为什么不用YYImage替代SDWebImage
 pod 'YYKit', '~> 1.0.9'
+#数据解析，可以处理驼峰，下划线命名
+pod 'MJExtension'
 end
