@@ -7,19 +7,39 @@
 //
 
 #import "SWQMainViewController.h"
+#import "SWQTopView.h"
 
 @interface SWQMainViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScrollView;
 @property (nonatomic,strong) NSArray * datalist;
+@property (nonatomic,strong) SWQTopView * topView;
 @end
 
 @implementation SWQMainViewController
+
 
 - (NSArray *) datalist{
     if(!_datalist){
         _datalist = @[@"关注",@"热门",@"附近"];
     }
     return _datalist;
+}
+
+- (SWQTopView *) topView{
+    if(!_topView){
+        _topView = [[SWQTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 40) titleNames:self.datalist];
+        @weakify (self)
+        
+        _topView.block=^(NSInteger tag) {
+            @strongify (self)
+            CGPoint point = CGPointMake(tag * SCREEN_WIDTH ,self.contentScrollView.contentOffset.y);
+            
+            [self.contentScrollView setContentOffset:point animated:YES];
+            
+        };
+
+    }
+    return _topView;
 }
 
 - (void)viewDidLoad {
@@ -37,8 +57,12 @@
 }
 
 - (void) setupNav{
+    self.navigationItem.titleView = self.topView;
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:nil action:nil];
+
+    
 }
 
 - (void)setupChildViewControllers {
@@ -59,7 +83,7 @@
     
     self.contentScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
     // 进入主控制器加载第一个页面
-    [self scrollViewDidEndScrollingAnimation:self.contentScrollView];
+    [self scrollViewDidEndDecelerating:self.contentScrollView];
     
 }
 
@@ -68,8 +92,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-// 减速结束时调用加载子控制器view的方法
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self scrollViewDidEndScrollingAnimation:scrollView];
+    
+}
+
+    
+    - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     
     //contentScrollView的width
     CGFloat width = SCREEN_WIDTH;
@@ -82,7 +112,7 @@
     NSInteger index = offsetX / width;
     
     //标题线
-//    [self.topView scrolling:index];
+    [self.topView scrolling:index];
     
     UIViewController * childVC = self.childViewControllers[index];
     
@@ -93,12 +123,6 @@
     childVC.view.frame = CGRectMake(offsetX, 0, scrollView.frame.size.width, height);
     //
     [scrollView addSubview:childVC.view];
-    
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    
-    [self scrollViewDidEndScrollingAnimation:scrollView];
     
 }
 

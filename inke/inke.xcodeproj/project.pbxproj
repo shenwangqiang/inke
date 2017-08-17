@@ -18,6 +18,7 @@
 		815959E21F3EFB7A00F5BE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 815959E01F3EFB7A00F5BE60 /* LaunchScreen.storyboard */; };
 		81595A011F3EFBCD00F5BE60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */; };
 		8175978E1F4539BA00D9088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8175978C1F4539BA00D9088F /* ViewController.m */; };
+		817597911F454BA500D9088F /* SWQTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817597901F454BA500D9088F /* SWQTopView.m */; };
 		818D9A431F41391300AFD202 /* SWQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 818D9A421F41391300AFD202 /* SWQTabBar.m */; };
 		81A8BC281F41A78700F93939 /* SWQFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A8BC261F41A78700F93939 /* SWQFocuseViewController.m */; };
 		81A8BC291F41A78700F93939 /* SWQFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A8BC271F41A78700F93939 /* SWQFocuseViewController.xib */; };
@@ -55,6 +56,8 @@
 		815959FB1F3EFBCD00F5BE60 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8175978A1F4539BA00D9088F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../Live/ViewControllers/ViewController.h; sourceTree = "<group>"; };
 		8175978C1F4539BA00D9088F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../Live/ViewControllers/ViewController.m; sourceTree = "<group>"; };
+		8175978F1F454BA500D9088F /* SWQTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQTopView.h; sourceTree = "<group>"; };
+		817597901F454BA500D9088F /* SWQTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQTopView.m; sourceTree = "<group>"; };
 		818D9A411F41391300AFD202 /* SWQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQTabBar.h; sourceTree = "<group>"; };
 		818D9A421F41391300AFD202 /* SWQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQTabBar.m; sourceTree = "<group>"; };
 		819D17861F3F08900013E0A0 /* SWQMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWQMacros.h; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 		81595A001F3EFBCD00F5BE60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8175978F1F454BA500D9088F /* SWQTopView.h */,
+				817597901F454BA500D9088F /* SWQTopView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				815959D41F3EFB7A00F5BE60 /* main.m in Sources */,
 				810495F61F414DFF001AC791 /* SWQTabBarController.m in Sources */,
 				81A8BC321F41A7CE00F93939 /* SWQNearViewController.m in Sources */,
+				817597911F454BA500D9088F /* SWQTopView.m in Sources */,
 				810496091F415181001AC791 /* SWQBaseNavigationController.m in Sources */,
 				810495F91F414F9D001AC791 /* SWQBaseViewController.m in Sources */,
 				81A8BC281F41A78700F93939 /* SWQFocuseViewController.m in Sources */,
