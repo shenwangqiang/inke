@@ -9,6 +9,7 @@
 #import "SWQTabBarController.h"
 #import "SWQTabBar.h"
 #import "SWQBaseNavigationController.h"
+#import "SWQLaunchViewController.h"
 
 @interface SWQTabBarController ()<SWQTabBarDelegate>
 
@@ -28,6 +29,11 @@
 
 - (void) tabbar:(SWQTabBar *)tabbar clickButton:(NSUInteger)idx{
     
+    if(idx == SWQItemTypeLaunch){
+        [self presentViewController:[[SWQLaunchViewController alloc] init] animated:YES completion:nil];
+    } else {
+        self.selectedIndex = idx-SWQItemTypeLive;
+    }
 }
 
 - (void)viewDidLoad {
@@ -39,6 +45,11 @@
     // 加载tabbar
     
     [self.tabBar addSubview:self.swqTabBar];
+    
+    // 删除tabbar的阴影线
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
+    [[UITabBar appearance] setBackgroundImage:[[UIImage alloc]init]];
+    
 }
 
 - (void) configViewControllers{
@@ -60,13 +71,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

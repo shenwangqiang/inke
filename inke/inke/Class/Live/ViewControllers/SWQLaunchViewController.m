@@ -1,24 +1,25 @@
 //
-//  SWQBaseNavigationController.m
+//  SWQLaunchViewController.m
 //  inke
 //
-//  Created by 沈王强 on 2017/8/14.
+//  Created by 沈王强 on 2017/8/16.
 //  Copyright © 2017年 沈王强. All rights reserved.
 //
 
-#import "SWQBaseNavigationController.h"
+#import "SWQLaunchViewController.h"
 
-@interface SWQBaseNavigationController ()
+@interface SWQLaunchViewController ()
 
 @end
 
-@implementation SWQBaseNavigationController
+@implementation SWQLaunchViewController
+- (IBAction)close:(id)sender {
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.navigationBar.barTintColor = RGB(0, 216, 201);
-    self.navigationBar.tintColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

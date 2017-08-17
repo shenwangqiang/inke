@@ -1,5 +1,5 @@
 //
-//  SWQMeViewController.h
+//  SWQLaunchViewController.h
 //  inke
 //
 //  Created by 沈王强 on 2017/8/16.
@@ -8,6 +8,6 @@
 
 #import "SWQBaseViewController.h"
 
-@interface SWQMeViewController : SWQBaseViewController
+@interface SWQLaunchViewController : SWQBaseViewController
 
 @end

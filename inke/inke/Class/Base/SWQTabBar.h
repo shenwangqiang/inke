@@ -11,7 +11,8 @@
 typedef NS_ENUM(NSUInteger,SWQItemType){
     SWQItemTypeLive = 100,//展示直播
     SWQItemTypeMe = 101,//我的
-    SWQItemTypeIndex
+    SWQItemTypeIndex,
+    SWQItemTypeLaunch
     
 };
 

@@ -1,24 +1,22 @@
 //
-//  SWQBaseNavigationController.m
-//  inke
+//  ViewController.m
+//  02-Xib创建工程
 //
-//  Created by 沈王强 on 2017/8/14.
-//  Copyright © 2017年 沈王强. All rights reserved.
+//  Created by 大欢 on 16/6/6.
+//  Copyright © 2016年 大欢. All rights reserved.
 //
 
-#import "SWQBaseNavigationController.h"
+#import "ViewController.h"
 
-@interface SWQBaseNavigationController ()
+@interface ViewController ()
 
 @end
 
-@implementation SWQBaseNavigationController
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.navigationBar.barTintColor = RGB(0, 216, 201);
-    self.navigationBar.tintColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,24 +1,22 @@
 //
-//  SWQBaseNavigationController.m
+//  SWQFocuseViewController.m
 //  inke
 //
 //  Created by 沈王强 on 2017/8/14.
 //  Copyright © 2017年 沈王强. All rights reserved.
 //
 
-#import "SWQBaseNavigationController.h"
+#import "SWQFocuseViewController.h"
 
-@interface SWQBaseNavigationController ()
+@interface SWQFocuseViewController ()
 
 @end
 
-@implementation SWQBaseNavigationController
+@implementation SWQFocuseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.navigationBar.barTintColor = RGB(0, 216, 201);
-    self.navigationBar.tintColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

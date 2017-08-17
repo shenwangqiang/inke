@@ -2,7 +2,7 @@
 //  SWQMeViewController.m
 //  inke
 //
-//  Created by 沈王强 on 2017/8/14.
+//  Created by 沈王强 on 2017/8/16.
 //  Copyright © 2017年 沈王强. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = RGB(100, 100, 100);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,6 +1,6 @@
 //
 //  SWQTabBar.m
-//  
+//
 //
 //  Created by 沈王强 on 2017/8/14.
 //
@@ -14,9 +14,35 @@
 
 @property (nonatomic,strong) NSArray * datalist;
 
+@property (nonatomic,strong) UIButton * lastBtn;
+
+@property (nonatomic,strong) UIButton * cameraBtn;
+
 @end
 
 @implementation SWQTabBar
+- (UIButton *)cameraBtn{
+    if(!_cameraBtn){
+        _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cameraBtn setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        [_cameraBtn sizeToFit];
+        _cameraBtn.tag =SWQItemTypeLaunch;
+        [_cameraBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cameraBtn;
+}
+//
+//- (UIButton *)cameraBtn {
+//    
+//    if (!_cameraBtn) {
+//        _cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [_cameraBtn setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+//        [_cameraBtn sizeToFit];
+//        [_cameraBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+//        _cameraBtn.tag =SWQItemTypeLaunch;
+//    }
+//    return _cameraBtn;
+//}
 
 - (NSArray *) datalist{
     if(!_datalist){
@@ -41,13 +67,25 @@
         // 装载item
         for (NSInteger i=0; i<self.datalist.count; i++) {
             UIButton * item = [UIButton buttonWithType:UIButtonTypeCustom] ;
+            
+            // 不让图片在高亮下改变
+            item.adjustsImageWhenHighlighted = NO;
+            
             [item setImage:[UIImage imageNamed:self.datalist[i]] forState:UIControlStateNormal];
             [item setImage:[UIImage imageNamed:[self.datalist[i] stringByAppendingString:@"_p"]] forState:UIControlStateSelected];
             
             [item addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
             item.tag = SWQItemTypeLive+i;
+            
+            if(i==0){
+                item.selected = YES;
+                self.lastBtn = item;
+            }
             [self addSubview:item];
         }
+        
+        // 添加直播按钮
+        [self addSubview:self.cameraBtn];
     }
     return self;
 }
@@ -66,6 +104,8 @@
         }
     }
     
+    [_cameraBtn sizeToFit];
+    self.cameraBtn.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2-25);
 }
 
 - (void) clickItem:(UIButton *)btn{
@@ -76,5 +116,25 @@
     if(self.block){
         self.block(self,btn.tag);
     }
+    
+    if(btn.tag == SWQItemTypeLaunch){
+        return;
+    }
+    
+    self.lastBtn.selected = NO;
+    self.lastBtn = btn;
+    btn.selected = YES;
+    
+    // 设置动画
+    [UIView animateWithDuration:0.2 animations:^{
+        // 将btn扩大1.2倍
+        btn.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.2 animations:^{
+            // 恢复原始状态
+            btn.transform = CGAffineTransformIdentity;
+            
+        }];
+    }];
 }
 @end
