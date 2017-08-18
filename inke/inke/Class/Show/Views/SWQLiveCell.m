@@ -8,12 +8,13 @@
 
 #import "SWQLiveCell.h"
 
-@interface  SWQLiveCell();  
+@interface  SWQLiveCell();
 @property (weak, nonatomic) IBOutlet UIImageView *headView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *onLineLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bigImageView;
+@property (weak, nonatomic) IBOutlet UILabel *lineLabel;
 
 @end
 
@@ -32,6 +33,9 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    // 圆角图片 ，也可以通过xib文件中key path 修改
+    self.headView.layer.masksToBounds = YES;
+    self.headView.layer.cornerRadius  = 5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
