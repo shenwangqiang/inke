@@ -24,11 +24,12 @@
 		817597A11F457F0E00D9088F /* SWQLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 817597A01F457F0E00D9088F /* SWQLiveHandler.m */; };
 		817597A71F45814A00D9088F /* SWQLive.m in Sources */ = {isa = PBXBuildFile; fileRef = 817597A61F45814A00D9088F /* SWQLive.m */; };
 		817597AA1F45815B00D9088F /* SWQBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 817597A91F45815B00D9088F /* SWQBaseHandler.m */; };
+		817597AE1F458FBC00D9088F /* SWQLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 817597AC1F458FBC00D9088F /* SWQLiveCell.m */; };
+		817597AF1F458FBC00D9088F /* SWQLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 817597AD1F458FBC00D9088F /* SWQLiveCell.xib */; };
 		818D9A431F41391300AFD202 /* SWQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 818D9A421F41391300AFD202 /* SWQTabBar.m */; };
 		81A8BC281F41A78700F93939 /* SWQFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A8BC261F41A78700F93939 /* SWQFocuseViewController.m */; };
 		81A8BC291F41A78700F93939 /* SWQFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A8BC271F41A78700F93939 /* SWQFocuseViewController.xib */; };
 		81A8BC2D1F41A79E00F93939 /* SWQHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A8BC2B1F41A79E00F93939 /* SWQHotViewController.m */; };
-		81A8BC2E1F41A79E00F93939 /* SWQHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A8BC2C1F41A79E00F93939 /* SWQHotViewController.xib */; };
 		81A8BC321F41A7CE00F93939 /* SWQNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A8BC301F41A7CE00F93939 /* SWQNearViewController.m */; };
 		81A8BC331F41A7CE00F93939 /* SWQNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A8BC311F41A7CE00F93939 /* SWQNearViewController.xib */; };
 		81D572FD1F44295100AA369E /* SWQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D572FB1F44295100AA369E /* SWQMeViewController.m */; };
@@ -74,6 +75,9 @@
 		817597A61F45814A00D9088F /* SWQLive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQLive.m; sourceTree = "<group>"; };
 		817597A81F45815B00D9088F /* SWQBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQBaseHandler.h; sourceTree = "<group>"; };
 		817597A91F45815B00D9088F /* SWQBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQBaseHandler.m; sourceTree = "<group>"; };
+		817597AB1F458FBC00D9088F /* SWQLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQLiveCell.h; sourceTree = "<group>"; };
+		817597AC1F458FBC00D9088F /* SWQLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQLiveCell.m; sourceTree = "<group>"; };
+		817597AD1F458FBC00D9088F /* SWQLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQLiveCell.xib; sourceTree = "<group>"; };
 		818D9A411F41391300AFD202 /* SWQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQTabBar.h; sourceTree = "<group>"; };
 		818D9A421F41391300AFD202 /* SWQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQTabBar.m; sourceTree = "<group>"; };
 		819D17861F3F08900013E0A0 /* SWQMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWQMacros.h; sourceTree = "<group>"; };
@@ -82,7 +86,6 @@
 		81A8BC271F41A78700F93939 /* SWQFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQFocuseViewController.xib; sourceTree = "<group>"; };
 		81A8BC2A1F41A79E00F93939 /* SWQHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQHotViewController.h; sourceTree = "<group>"; };
 		81A8BC2B1F41A79E00F93939 /* SWQHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQHotViewController.m; sourceTree = "<group>"; };
-		81A8BC2C1F41A79E00F93939 /* SWQHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQHotViewController.xib; sourceTree = "<group>"; };
 		81A8BC2F1F41A7CE00F93939 /* SWQNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWQNearViewController.h; sourceTree = "<group>"; };
 		81A8BC301F41A7CE00F93939 /* SWQNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWQNearViewController.m; sourceTree = "<group>"; };
 		81A8BC311F41A7CE00F93939 /* SWQNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SWQNearViewController.xib; sourceTree = "<group>"; };
@@ -328,7 +331,6 @@
 				81A8BC271F41A78700F93939 /* SWQFocuseViewController.xib */,
 				81A8BC2A1F41A79E00F93939 /* SWQHotViewController.h */,
 				81A8BC2B1F41A79E00F93939 /* SWQHotViewController.m */,
-				81A8BC2C1F41A79E00F93939 /* SWQHotViewController.xib */,
 				81A8BC2F1F41A7CE00F93939 /* SWQNearViewController.h */,
 				81A8BC301F41A7CE00F93939 /* SWQNearViewController.m */,
 				81A8BC311F41A7CE00F93939 /* SWQNearViewController.xib */,
@@ -344,6 +346,9 @@
 			children = (
 				8175978F1F454BA500D9088F /* SWQTopView.h */,
 				817597901F454BA500D9088F /* SWQTopView.m */,
+				817597AB1F458FBC00D9088F /* SWQLiveCell.h */,
+				817597AC1F458FBC00D9088F /* SWQLiveCell.m */,
+				817597AD1F458FBC00D9088F /* SWQLiveCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,11 +459,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				815959E21F3EFB7A00F5BE60 /* LaunchScreen.storyboard in Resources */,
+				817597AF1F458FBC00D9088F /* SWQLiveCell.xib in Resources */,
 				81A8BC331F41A7CE00F93939 /* SWQNearViewController.xib in Resources */,
 				810496011F414FE3001AC791 /* SWQMainViewController.xib in Resources */,
 				815959DF1F3EFB7A00F5BE60 /* Assets.xcassets in Resources */,
 				815959DD1F3EFB7A00F5BE60 /* Main.storyboard in Resources */,
-				81A8BC2E1F41A79E00F93939 /* SWQHotViewController.xib in Resources */,
 				81D5730A1F44370400AA369E /* SWQLaunchViewController.xib in Resources */,
 				81A8BC291F41A78700F93939 /* SWQFocuseViewController.xib in Resources */,
 				81D572FE1F44295100AA369E /* SWQMeViewController.xib in Resources */,
@@ -526,6 +531,7 @@
 				817597A11F457F0E00D9088F /* SWQLiveHandler.m in Sources */,
 				8175978E1F4539BA00D9088F /* ViewController.m in Sources */,
 				81595A011F3EFBCD00F5BE60 /* AppDelegate.m in Sources */,
+				817597AE1F458FBC00D9088F /* SWQLiveCell.m in Sources */,
 				8175979A1F457B4A00D9088F /* UIImageView+SDWebImage.m in Sources */,
 				81D572FD1F44295100AA369E /* SWQMeViewController.m in Sources */,
 				81A8BC2D1F41A79E00F93939 /* SWQHotViewController.m in Sources */,

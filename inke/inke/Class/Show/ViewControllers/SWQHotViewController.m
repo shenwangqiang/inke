@@ -8,6 +8,9 @@
 
 #import "SWQHotViewController.h"
 #import "SWQLiveHandler.h"
+#import "SWQLiveCell.h"
+
+static NSString * identifier = @"SWQLiveCell";
 
 @interface SWQHotViewController ()
 
@@ -19,7 +22,7 @@
 
 - (NSMutableArray *) datalist{
     if(!_datalist){
-        _datalist = [NSMutableArray alloc];
+        _datalist = [NSMutableArray array];
     }
     return _datalist;
 }
@@ -29,7 +32,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    SWQLiveCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.live = self.datalist[indexPath.row];
+    return cell;
 }
 
 - (void)viewDidLoad {
@@ -41,8 +46,13 @@
     [self loadData];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70+SCREEN_WIDTH;
+}
+
 -(void) initUI{
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"SWQLiveCell" bundle:nil] forCellReuseIdentifier:identifier];
+
 }
 
 -(void) loadData{

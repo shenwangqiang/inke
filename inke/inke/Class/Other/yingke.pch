@@ -12,6 +12,7 @@
 #import "Masonry.h"
 #import "SWQMacros.h"
 #import "YYKit.h"
+#import "UIImageView+SDWebImage.h"
 
 #import "APIConfig.h"
 
