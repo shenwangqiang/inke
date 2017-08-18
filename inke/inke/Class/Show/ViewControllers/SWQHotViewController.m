@@ -9,6 +9,7 @@
 #import "SWQHotViewController.h"
 #import "SWQLiveHandler.h"
 #import "SWQLiveCell.h"
+#import "SWQPlayViewController.h"
 
 static NSString * identifier = @"SWQLiveCell";
 
@@ -48,6 +49,19 @@ static NSString * identifier = @"SWQLiveCell";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 70+SCREEN_WIDTH;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    SWQPlayViewController * playerVC = [[SWQPlayViewController alloc] init];
+    
+    playerVC.live = self.datalist[indexPath.row];
+    
+    [self.navigationController pushViewController:playerVC animated:YES];
+    
+    
+//    live.url;
 }
 
 -(void) initUI{

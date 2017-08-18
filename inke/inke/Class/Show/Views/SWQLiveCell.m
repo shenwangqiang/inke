@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *onLineLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *bigImageView;
-@property (weak, nonatomic) IBOutlet UILabel *lineLabel;
 
 @end
 

@@ -17,7 +17,7 @@
 
 //首页数据
 //#define API_LiveGetTop @"api/live/gettop"
-#define API_LIVEGETTOP @"/api/RoomApi/live/lol"
+#define API_LIVEGETTOP @"/api/RoomApi/live"
 
 //广告地址
 #define API_Advertise @"advertise/get"
